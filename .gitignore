@@ -1,5 +1,5 @@
 # Ignore installed npm modules
-node_modules/
+./node_modules/
 
 # Ignore build tool output, e.g. code coverage
 .nyc_output/
@@ -9,6 +9,6 @@ coverage/
 api-docs/
 
 # Ignore eleventy output when doing manual tests
-public/
+./public/
 package-lock.json
 test/stubs-layout-cache/_includes/*.js

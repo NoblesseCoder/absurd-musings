@@ -1,5 +1,5 @@
 ---
 layout: musings
-title: "Absurd Mussings"
+title: "What are Digital Gardens?"
 pageTitle: "What are Digital Gardens?"
 ---

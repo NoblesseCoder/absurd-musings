@@ -16,15 +16,23 @@
 	<p>
 		<div class="container-fluid">	
 			<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #F8F9FA;">
-  				<a class="navbar-brand" href="{{'/' | url}}" style="color: #4DA85B;">{{title}}</a>
+
+  				<a class="navbar-brand" href="{{'/' | url}}" style="color: #4DA85B;">
+            <img src="{{'/assets/img/logo.png'}}" width="50" height="50" alt="">
+        </a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     				<span class="navbar-toggler-icon"></span>
   				</button>
+
   				<div class="collapse navbar-collapse" id="navbarNav">
    					<ul class="nav navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="{{'/poetry' | url}}" style="color: #4DA85B;"> <h2>Poetry </h1></a>
+                </li>
       					<li class="nav-item">
-        					<a class="nav-link" href="{{'/whoami' | url}}" style="color: #4DA85B;">WhoamI?</a>
+        					<a class="nav-link" href="{{'/whoami' | url}}" style="color: #4DA85B;"> <h2>WhoamI? </h1></a>
       					</li>
+               
     				</ul>
   				</div>
 			</nav>
@@ -38,15 +46,17 @@
   			<div class="row">
     			<div class="col-md-8 blog-main">
       				<article class="blog-post">
-        				<h1 class="blog-post-title" data-tags="note"> Musings</h1>
-        				{{content | safe}}
+        				<h1 class="blog-post-title" data-tags="note"> {{title}}</h1>
+        				 <br>
+      
+                {{content | safe}}
+                
  					</article>
  				</div>
 
 				<aside class="col-md-4 blog-sidebar">
       				<div class="p-3 mb-3 bg-white rounded">
-        				<p class="text-secondary">Last edited 12th May 2020</p>
-        				<h3 class="mt-3">Backlinks</h3>
+        				<h3 class="mt-3">Other Musings</h3>
         				<ul class="list-unstyled">
 							{%- for musing in collections.musings -%}
 								<li class="list"><a href="{{musing.url}}" style="color: #4DA85B;">{{musing.data.pageTitle}}</a></li>

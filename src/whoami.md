@@ -1,5 +1,5 @@
 ---
-layout: "musings.njk"
-title: "Absurd Mussings"
+layout: "base.njk"
+title: "Who am I?"
 pageTitle: "Who am I?"
 ---

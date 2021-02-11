@@ -8,7 +8,7 @@ module.exports = function(eleventyConfig){
 
   	// Include our static assets
   	// eleventyConfig.addPassthroughCopy({'src/assets/fonts': 'assets/fonts'});
-  	// eleventyConfig.addPassthroughCopy({'src/assets/img': 'assets/img'});
+  	eleventyConfig.addPassthroughCopy({'src/assets/img': 'assets/img'});
   	// eleventyConfig.addPassthroughCopy({'src/assets/js': 'assets/js'});
   	// eleventyConfig.addPassthroughCopy('src/favicons');
   	// eleventyConfig.addPassthroughCopy('src/robots.txt');

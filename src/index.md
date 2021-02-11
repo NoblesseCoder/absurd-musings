@@ -1,6 +1,7 @@
 ---
-title: "Absurd Musings"
 layout: "base"
+title: "Absurd Musings"
+pageTitle: "Absurd Musings"
 ---
 
 
@@ -11,7 +12,7 @@ There is this cave scene from the film Dead Poets Society where the lead reads a
 
   
 
-> "I went to the woods because I wanted to live deliberately, I wanted to live deep and suck out all the marrow of life. To put to rout all that was not life and not when I had come to die to discover that I had not lived."
-> 
+"I went to the woods because I wanted to live deliberately, I wanted to live deep and suck out all the marrow of life. To put to rout all that was not life and not when I had come to die to discover that I had not lived."
+ 
 
 To me in this quote, the line between life and thought blurs out. To suck out all the marrow of thought is the sole purpose of this garden.

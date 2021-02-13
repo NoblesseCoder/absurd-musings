@@ -1,9 +1,9 @@
 ---
-layout: "base"
+layout: "index"
 title: "Poems and Haikus"
 pageTitle: "Poems and Haikus"
+contentCategory: "homepage"
 ---
-
 
 <pre style="font-size: 20px; font-family: monospace;">
 I sat there fishing 

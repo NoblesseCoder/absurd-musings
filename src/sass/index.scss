@@ -1,12 +1,14 @@
 html body {
-    font-family: monospace;
+  font-family: monospace;
+  background-color:#F7F7F7;
 }
 
-p,{
-	font-size: 20px;
+p{
+  font-size: 20px;
 }
+
 .blog-post-title{
-	color: #4DA85B;
+  color: #4DA85B;
 }
 
 .fa {
@@ -19,7 +21,7 @@ p,{
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .fa-instagram {
@@ -36,3 +38,7 @@ p,{
   background: #55ACEE;
   color: white;
 }
+
+.bg-custom { 
+    background-color: #F7F7F7; 
+} 

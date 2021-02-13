@@ -1,10 +1,9 @@
 ---
-layout: "base"
+layout: "index"
 title: "Absurd Musings"
 pageTitle: "Absurd Musings"
+contentCategory: "homepage"
 ---
-
-
 
 Welcome to the garden of the absurd. Here I reflect and toil around with ideas from late-night reflections on abstract philosophies to takes on random cat videos (Yeah :( that's the most absurd range I could come up with).  
 

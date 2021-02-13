@@ -11,12 +11,15 @@ module.exports = function(eleventyConfig){
 		markdownTemplateEngine: 'njk',
 		htmlTemplateEngine: 'njk',
 		passtroughFileCopy: true,
-
+		title: 'absurd-musings',
+		rootUrl:'https://absurd-musings.netlify.app',
+		disqusShortName:'https-absurd-musings-netlify-app',
 		dir: {
 			input: 'src',
 			output: 'dist',
 			includes: '_includes',
 			layouts: '_includes/layouts'
+
 		}
 	}
 };

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title> {{title}} </title>
-	<link rel = "icon" href =  "{{'/assets/img/logo.png'}}"  type = "image/x-icon">
+  <title> {{title}} </title>
+  <link rel = "icon" href =  "{{'/assets/img/logo.png'}}"  type = "image/x-icon">
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="{{'/css/index.light.css' | url}} " media="(prefers-color-scheme: light)">
-  <link rel="stylesheet" type="text/css" href="{{'/css/index.dark.css' | url}} " media="(prefers-color-scheme: dark)">
-  <script type="module" src="https://googlechromelabs.github.io/dark-mode-toggle/src/dark-mode-toggle.mjs"></script>
+  <link rel="stylesheet" type="text/css" href="{{'/css/poetry.light.css' | url}} " media="(prefers-color-scheme: light)">
+  <link rel="stylesheet" type="text/css" href="{{'/css/poetry.dark.css' | url}} " media="(prefers-color-scheme: dark)">
+   <script type="module" src="https://googlechromelabs.github.io/dark-mode-toggle/src/dark-mode-toggle.mjs"></script>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
     <div class="row">
     <div class="container-fluid"> 
       <nav class="navbar navbar-expand-lg navbar-light bg-custom" >
-          <a class="navbar-brand" href="{{'/' | url}}" >
+          <a class="navbar-brand" href="{{'/' | url}}" style="color: #4DA85B;">
             <img src="{{'/assets/img/logo.png'}}" width="50" height="50" alt="">
           </a>
           <dark-mode-toggle remember=""></dark-mode-toggle>
@@ -33,11 +33,11 @@
           <div class="collapse navbar-collapse" id="navbarNav">
            <ul class="nav navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="{{'/poetry' | url}}" > <h4 class = "tlink">Poetry</h4></a>
+                <a class="nav-link" href="{{'/poetry' | url}}" style="color: #4DA85B;"> <h4>Poetry</h4></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://ashikpoovanna.carrd.co/" > 
-                  <h4 class = "tlink">WhoamI?</h4>
+                <a class="nav-link" href="https://ashikpoovanna.carrd.co/" style="color: #4DA85B;"> 
+                  <h4>WhoamI?</h4>
                 </a>
               </li> 
            </ul>
@@ -45,29 +45,27 @@
       </nav>
    </div>
   </div>
-
   <div class="row">
     <div class="col-md-8">
-      <article class="intro">
-        <h1 class="blog-post-title" data-tags="note"> {{pageTitle}}</h1>
-        <br>
+      <h1 class="blog-post-title" data-tags="note"> {{pageTitle}}</h1>
+      <article >
           {{content | safe}}
       </article>
- 		</div>
+    </div>
 
-		<div class="col-md-4">
+    <div class="col-md-4">
         <h3 class="mt-3">Other Musings</h3>
-        	<ul class="list-unstyled">
-						{%- for musing in collections.musings -%}
-							<li class="list"><a href="{{musing.url}}" style="color: #4DA85B;">{{musing.data.pageTitle}}</a></li>
-						{%- endfor -%}
-					</ul>
- 		</div>
-	</div>
+          <ul class="list-unstyled">
+            {%- for musing in collections.musings -%}
+              <li class="list"><a href="{{musing.url}}" style="color: #4DA85B;">{{musing.data.pageTitle}}</a></li>
+            {%- endfor -%}
+          </ul>
+    </div>
+  </div>
 </div>  
 
 </div>
-	
+  
 
 
  <!-- Optional JavaScript -->

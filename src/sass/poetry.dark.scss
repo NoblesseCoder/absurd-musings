@@ -1,0 +1,57 @@
+html body {
+  font-family: monospace;
+  background-color:#242933;
+  color:white;
+}
+
+.tlink{
+  color: #4DA85B;
+}
+
+p{
+  font-size: 20px;
+}
+
+.blog-post-title{
+  color: #4DA85B;
+}
+
+.bg-custom { 
+    background-color: #2E3440; 
+} 
+
+.container-md{
+  padding:2rem;
+  backgorund-color:green;
+}
+
+.row{
+  padding:1rem;
+}
+
+.col-md-4{
+  text-align:right;
+}
+
+.poetry {
+    font-size: 20px;
+    font-family: monospace;
+    border-radius: 10px;
+    border: 2px solid;
+    padding: 10px;
+    background: #2E3440;
+    display:inline-block;
+}
+
+.poem-date{
+  font-size: 14px;
+}
+
+pre{
+  color:white;
+}
+
+dark-mode-toggle {
+  --dark-mode-toggle-dark-icon: url("/assets/img/light.svg");
+  --dark-mode-toggle-light-icon: url("/assets/img/dark.svg");
+}

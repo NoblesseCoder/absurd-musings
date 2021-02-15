@@ -1,22 +1,25 @@
 ---
-layout: "index"
+layout: "poetry"
 title: "Poems and Haikus"
 pageTitle: "Poems and Haikus"
 contentCategory: "homepage"
 ---
 
-<pre style="font-size: 20px; font-family: monospace;">
+
+<br/>
+
+<pre class = "poetry">
 I sat there fishing 
 A water snake slithered by
 Noisy cicadas
--- Jan 9 2021
+<i class = "poem-date">-- Jan 10 2021 </i>
 </pre>
-</br>
 
-<pre style="font-size: 20px; font-family: monospace;">
+<pre class = "poetry">
 In the year of rat
 a virus has plagued thy world
 Unthinkable chaos
--- Jan 10 2021
+<i class = "poem-date">-- Jan 10 2021 </i>
 </pre>
+
 

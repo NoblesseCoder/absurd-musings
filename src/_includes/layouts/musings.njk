@@ -8,19 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{'/css/musings.css' | url}}">
+    <link rel="stylesheet" type="text/css" href="{{'/css/musings.light.css' | url}} " media="(prefers-color-scheme: light)">
+  <link rel="stylesheet" type="text/css" href="{{'/css/musings.dark.css' | url}} " media="(prefers-color-scheme: dark)">
+   <script type="module" src="https://googlechromelabs.github.io/dark-mode-toggle/src/dark-mode-toggle.mjs"></script>
 
 </head>
 <body>
 
 <div id="full_page">
 <!-- NavBar -->
-  <p>
+<div class = "container-md">
+    <div class="row">
     <div class="container-fluid"> 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #F8F9FA;">
+      <nav class="navbar navbar-expand-lg navbar-light bg-custom" >
           <a class="navbar-brand" href="{{'/' | url}}" style="color: #4DA85B;">
             <img src="{{'/assets/img/logo.png'}}" width="50" height="50" alt="">
           </a>
+          <dark-mode-toggle remember=""></dark-mode-toggle>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -28,57 +32,47 @@
           <div class="collapse navbar-collapse" id="navbarNav">
            <ul class="nav navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="{{'/poetry' | url}}" style="color: #4DA85B;"> <h4>|Poetry|</h4></a>
+                <a class="nav-link" href="{{'/poetry' | url}}" style="color: #4DA85B;"> <h4>Poetry</h4></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{'/whoami' | url}}" style="color: #4DA85B;"> <h4>|WhoamI?|</h4></a>
+                <a class="nav-link" href="https://ashikpoovanna.carrd.co/" style="color: #4DA85B;"> 
+                  <h4>WhoamI?</h4>
+                </a>
               </li> 
            </ul>
           </div>
       </nav>
+   </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <article class="intro">
+        <h1 class="blog-post-title" data-tags="note"> {{pageTitle}}</h1>
+        <br>
+          {{content | safe}}
+      </article>
     </div>
-  </p>
 
+    <div class="col-md-4">
+        <h3 class="mt-3">Other Musings</h3>
+          <ul class="list-unstyled">
+            {%- for musing in collections.musings -%}
+              <li class="list"><a href="{{musing.url}}" style="color: #4DA85B;">{{musing.data.pageTitle}}</a></li>
+            {%- endfor -%}
+          </ul>
+    </div>
+  </div>
+</div>  
 
-<section class="section">
-  <p>
-    <main class="container" role="main">
-        <div class="row">
-          <div class="col-md-8 blog-main">
-              <article class="blog-post">
-                <h1 class="blog-post-title" data-tags="note"> {{pageTitle}}</h1>
-                 <br>
-      
-                {{content | safe}}
-                
-          </article>
-        </div>
-
-        <aside class="col-md-4 blog-sidebar">
-              <div class="p-3 mb-3 bg-white rounded">
-                <h3 class="mt-3">Other Musings</h3>
-                <ul class="list-unstyled">
-              {%- for musing in collections.musings -%}
-                {%- if musing.data.pageTitle != title-%}
-                <li class="list"><a href="{{musing.url}}" style="color: #4DA85B;">{{musing.data.pageTitle}}</a></li>
-                {%- endif -%}
-              {%- endfor -%}
-            </ul>
-              </div>
-        </aside>
-      </div>
-    </main>
-  </p>
-</section>
 </div>
 
 
 <div id="disqus_thread" class= "ml-5 mr-5 "></div>
 <script>
     var disqus_config = function () {
-    this.page.url = "{{site.rootUrl}}{{ page.url }}";
-    console.log(this.page.url) 
-    this.page.identifier = "{{ page.fileSlug }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    this.page.url = "{{site.rootUrl}}{{page.url}}";
+    this.page.identifier = "{{page.fileSlug}}"; 
     };
     
     (function() { // DON'T EDIT BELOW THIS LINE

@@ -14,3 +14,6 @@ In simple words, it's just an evolving blog that allows the writer to reflect on
 [3] [Building A Blog With Eleventy And Netlify CMS](https://youtu.be/Tq1XtMjlR28?list=PL2dKqfImstaQzmwhwtWRYAmnJVd8xwEtB) 
 
 [4] [Building Personal Static Site with Eleventy](https://jec.fyi/blog/building-my-static-site-with-11ty) (An alternative project using GitHub Actions and Firebase Hosting)
+
+[5] [Enabling light/dark mode toggling](https://github.com/GoogleChromeLabs/dark-mode-toggle) ([Colour Scheme Tutorial](https://web.dev/prefers-color-scheme/))
+

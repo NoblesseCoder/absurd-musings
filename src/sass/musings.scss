@@ -1,7 +1,12 @@
+:root {
+  color-scheme: light dark;
+}
+
 html body {
-  font-family: monospace;
-  background-color:#242933;
-  color:white;
+	font-family: monospace;	
+	background-color: var(--background-color); 
+  text-color: var(--text-color);
+  color: var(--color);
 }
 
 .tlink{
@@ -9,17 +14,16 @@ html body {
 }
 
 p{
-  font-size: 20px;
+	font-size: 20px;
 }
 
 .blog-post-title{
-  color: #4DA85B;
+	color: #4DA85B;
 }
 
 .bg-custom { 
-    background-color: #2E3440; 
+    background-color: var(--background-color); 
 } 
-
 
 .container-md{
   padding:2rem;
@@ -32,16 +36,6 @@ p{
 
 .col-md-4{
   text-align:right;
-}
-
-.intro {
-    font-size: 20px;
-    font-family: monospace;
-    border-radius: 10px;
-    border: 2px solid;
-    padding: 10px;
-    background: #2E3440;
-    display:inline-block;
 }
 
 dark-mode-toggle {

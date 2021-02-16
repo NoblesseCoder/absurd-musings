@@ -1,6 +1,12 @@
+:root {
+  color-scheme: light dark;
+}
+
 html body {
   font-family: monospace;
-  background-color:#F7F7F7;
+  background-color: var(--background-color); 
+  text-color: var(--text-color);
+  color: var(--color);
 }
 
 .tlink{
@@ -12,22 +18,12 @@ p{
 }
 
 .blog-post-title{
-  color: #4DA85B;
+  color: green;
 }
 
 .bg-custom { 
-    background-color: #F7F7F7; 
+    background-color: var(--background-color); 
 } 
-
-
-.intro {
-    font-size: 20px;
-    font-family: monospace;
-    border-radius: 10px;
-    border: 2px solid;
-    padding: 20px;
-    background: #fff;
-}
 
 .container-md{
   padding:2rem;
@@ -48,8 +44,9 @@ p{
     border-radius: 10px;
     border: 2px solid;
     padding: 10px;
-    background: #fff;
+    background: var(--article-background-color);
     display:inline-block;
+    text-color: var(--text-color)
 }
 
 dark-mode-toggle {

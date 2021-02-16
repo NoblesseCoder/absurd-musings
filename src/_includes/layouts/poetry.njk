@@ -9,9 +9,11 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="{{'/css/poetry.light.css' | url}} " media="(prefers-color-scheme: light)">
-  <link rel="stylesheet" type="text/css" href="{{'/css/poetry.dark.css' | url}} " media="(prefers-color-scheme: dark)">
-   <script type="module" src="https://googlechromelabs.github.io/dark-mode-toggle/src/dark-mode-toggle.mjs"></script>
+   <link rel="stylesheet" type="text/css" href="{{'/css/poetry.css' | url}} ">
+  <link rel="stylesheet" type="text/css" href="{{'/css/light.css' | url}} "media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+  <link rel="stylesheet" type="text/css" href="{{'/css/dark.css' | url}} " media="(prefers-color-scheme: dark)">
+
+  <script type="module" src="https://googlechromelabs.github.io/dark-mode-toggle/src/dark-mode-toggle.mjs"></script>
 </head>
 
 <body>
@@ -26,6 +28,17 @@
             <img src="{{'/assets/img/logo.png'}}" width="50" height="50" alt="">
           </a>
           <dark-mode-toggle remember=""></dark-mode-toggle>
+          <script>    
+            const darkModeToggle = document.querySelector('dark-mode-toggle');
+            const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');              
+            darkModeMediaQuery.addListener((e) => {
+            if (e.matches) {
+              darkModeToggle.mode = 'dark';
+            } else {
+              darkModeToggle.mode = 'light';
+            }
+            });
+          </script>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>

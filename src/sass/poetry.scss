@@ -1,7 +1,12 @@
+:root {
+  color-scheme: light dark;
+}
+
 html body {
   font-family: monospace;
-  background-color:#242933;
-  color:white;
+  background-color: var(--background-color); 
+  text-color: var(--text-color);
+  color: var(--color);
 }
 
 .tlink{
@@ -17,7 +22,7 @@ p{
 }
 
 .bg-custom { 
-    background-color: #2E3440; 
+    background-color: var(--background-color); 
 } 
 
 .container-md{
@@ -39,16 +44,17 @@ p{
     border-radius: 10px;
     border: 2px solid;
     padding: 10px;
-    background: #2E3440;
+    background: var(--article-background-color);
     display:inline-block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+    color: var(--color);
 }
+
 
 .poem-date{
   font-size: 14px;
-}
-
-pre{
-  color:white;
 }
 
 dark-mode-toggle {

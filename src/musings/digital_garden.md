@@ -7,6 +7,10 @@ contentCategory: "technical"
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere eleifend leo quis interdum. Nullam ut neque in nisi fermentum tempor sed euismod magna. In cursus maximus rutrum. Pellentesque pulvinar ligula eu scelerisque volutpat. Nullam a maximus sapien. Donec volutpat metus sit amet quam pretium, nec sodales nulla tempor. Maecenas quis justo quis felis ullamcorper facilisis. Nam elementum aliquet ex, vel tincidunt leo ullamcorper id.
 
+<br/>
+<center> <img src="{{'/assets/img/whoami.jpg'}}"></img> </center>
+<br/>
+
 Quisque eu volutpat felis. Sed elementum turpis pharetra tellus eleifend gravida. Cras convallis hendrerit dui, non convallis ante hendrerit nec. Donec gravida, libero sed semper dapibus, quam justo dapibus mauris, id posuere eros sapien non justo. Proin tortor nulla, mollis a orci eleifend, viverra aliquam lectus. Praesent vulputate sem at mi semper, non facilisis leo maximus. Nunc aliquet libero sed nisi bibendum, blandit mollis nulla accumsan. Proin bibendum sodales leo, id molestie sapien pharetra in. Vivamus ut vulputate felis, convallis viverra justo. Donec tempus, velit commodo varius semper, metus ipsum semper urna, at tempus augue nibh vel metus. Maecenas eget elementum felis. Aliquam quis dictum orci, nec rhoncus nisi. Etiam rutrum, massa nec pretium vestibulum, purus ex tincidunt urna, vel faucibus dui risus et erat. Proin id enim et mi venenatis tempus. Sed massa nibh, pulvinar ac risus vitae, luctus dignissim magna.
 
 Curabitur cursus sapien ac tellus pretium tempus. Vestibulum aliquet sem lacinia convallis varius. Nullam malesuada lectus in turpis vehicula, vel tempus dui molestie. Fusce vulputate felis sed nulla finibus gravida. Duis tincidunt quam eu rutrum pellentesque. Pellentesque tristique pellentesque sapien, quis vehicula enim consectetur nec. Morbi suscipit arcu et urna posuere, id laoreet nunc ornare. Nunc ac turpis in enim pulvinar ornare.

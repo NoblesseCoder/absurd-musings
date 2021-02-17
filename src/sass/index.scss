@@ -1,21 +1,25 @@
 html body {
   font-family: monospace;
-  text-color: green;
-  color: black;
+  color: rgb(0,0,0,1);
   background-image:url("https://media.giphy.com/media/LrY1e5IDFLc1XtDKZf/giphy.gif")
 }
 
 .tlink{
-  color: green;
+  color: #4DA85B;
 }
 
 p{
   font-size: 20px;
 }
 
+em{
+  font-size: 20px;
+  font-family: monospace;
+}
+
 .container-fluid, .blog-post-title{
   color: green;
-  text-color: green;
+  text-color: #4DA85B;
 
 }
 
@@ -42,7 +46,7 @@ p{
     border-radius: 10px;
     border: 2px solid;
     padding: 10px;
-    background-color:rgba(255,255,255,0.8);
+    background-color:rgba(255,255,255,0.9);
     display:inline-block;
     text-color: var(--text-color)
 }
@@ -53,16 +57,18 @@ p{
 
 
 .footer {
-  position: relative;
-  margin-top: -150px; /* negative value of footer height */
-  height: 150px;
-  clear:both;
-  padding-top:20px;
-} 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 60px;
+    background-color: black;
+    padding: 1px;
+}
 
-
-
-
-
-
+.container {
+    padding: 1px;
+    text-color:white;
+    text-align: center;
+}
 

@@ -35,7 +35,7 @@ p{
   text-align:right;
 }
 
-dark-mode-toggle {
-  --dark-mode-toggle-dark-icon: url("/assets/img/light.svg");
-  --dark-mode-toggle-light-icon: url("/assets/img/dark.svg");
+.navbar-toggler .navbar-toggler-icon {
+  background-color: rgba(255,255,255,0.6);
 }
+

@@ -1,12 +1,9 @@
-:root {
-  color-scheme: light dark;
-}
-
 html body {
 	font-family: monospace;	
-	background-color: var(--background-color); 
-  text-color: var(--text-color);
-  color: var(--color);
+	background-color: rgb(0,0,0,1); 
+  text-color: white;
+  color: #ececec;
+  filter: brightness(0.7);
 }
 
 .tlink{
@@ -22,12 +19,12 @@ p{
 }
 
 .bg-custom { 
-    background-color: var(--background-color); 
+    background-color: black; 
 } 
 
 .container-md{
   padding:2rem;
-  backgorund-color:green;
+  backgorund-color:#4DA85B;
 }
 
 .row{

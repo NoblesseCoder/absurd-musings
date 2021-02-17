@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <link rel="stylesheet" type="text/css" href="{{'/css/index.css' | url}} ">
+  <link rel="stylesheet" type="text/css" href="{{'/css/musingsList.css' | url}} ">
 
 </head>
 
@@ -46,13 +46,19 @@
    </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-12">
-      <article class="intro">
-        <br>
-          {{content | safe}}
-      </article>
- 		</div>
+   <div class="row">
+    <div class="col-md-12 musingsList">
+   
+         <h2 class = "tlink">Musings List</h2>
+       <br/>
+        <ul class="list-unstyled">
+              {%- for musing in collections.musings -%}
+                <li class="list"> <h5><a class= "list" href="{{musing.url}}">{{musing.data.pageTitle}}</a> </h5></li>
+              {%- endfor -%}
+        </ul>
+    </div>
+
+
 
 	</div>
 </div>  

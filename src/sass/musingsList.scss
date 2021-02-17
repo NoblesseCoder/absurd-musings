@@ -32,11 +32,8 @@ p{
   padding:1rem;
 }
 
-.col-md-4{
-  text-align:right;
-}
 
-.intro {
+.musingsList {
     font-size: 20px;
     font-family: monospace;
     border-radius: 10px;
@@ -51,6 +48,13 @@ p{
   background-color: rgba(255,255,255,0.6);
 }
 
+.col-md-12{
+   background-color: rgba(255,255,255,0.9);
+}
+
+.list{
+  color:black;
+}
 
 .footer {
   position: relative;
@@ -59,6 +63,7 @@ p{
   clear:both;
   padding-top:20px;
 } 
+
 
 
 

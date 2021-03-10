@@ -41,6 +41,7 @@
 				<div class="col-md-12 musingsList">
 					<h2 class="tlink">Musings List</h2>
 					<br/>
+					{{content | safe}}
 					<ul class="list-unstyled"> {%- for musing in collections.musings -%}
 						<li class="list">
 							<h5><a class= "list" href="{{musing.url}}">{{musing.data.pageTitle}}</a> </h5></li> {%- endfor -%} </ul>

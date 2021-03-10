@@ -1,7 +1,8 @@
 html body {
   font-family: monospace;	
   background-color: rgb(255, 255, 255); 
-  color: rgb(0, 0, 0);
+  color: rgb(0,0,0,1);
+  text-color:white;
 }
 
 .tlink{
@@ -22,7 +23,6 @@ p{
 
 .container-md{
   padding:2rem;
-  margin:2rem;
 }
 
 .row{
@@ -48,3 +48,12 @@ img {
     max-width: 100%;
     height: auto;
     }
+
+.post {
+    font-size: 10px;
+    font-family: monospace;
+    border-radius: 10px;
+    padding: 20px;
+    background-color:rgba(255,255,255,1);
+    display:inline-block;
+}

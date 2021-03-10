@@ -1,9 +1,7 @@
 html body {
   font-family: monospace;	
-  background-color: rgb(0,0,0,1); 
-  text-color: white;
-  color: #ececec;
-  filter: brightness(0.7);
+  background-color: rgb(255, 255, 255); 
+  color: rgb(0, 0, 0);
 }
 
 .tlink{
@@ -19,24 +17,31 @@ p{
 }
 
 .bg-custom { 
-    background-color: black; 
+    background-color: rgb(0,0,0); 
 } 
 
 .container-md{
   padding:2rem;
-  backgorund-color:#4DA85B;
+  margin:2rem;
 }
 
 .row{
   padding:1rem;
+  margin:1 rem;
 }
 
 .col-md-4{
   text-align:right;
 }
 
+.col-md-12{
+  padding-top:2rem;
+  padding-left:2rem;
+  padding-right:2rem;
+}
+
 .navbar-toggler .navbar-toggler-icon {
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(0,0,0,0.6);
 }
 
 img {

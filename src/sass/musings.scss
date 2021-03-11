@@ -5,6 +5,14 @@ html body {
   text-color:white;
 }
 
+@media only screen and (max-width: 320px) {
+
+   body { 
+      font-size: 2em; 
+   }
+
+}
+
 .tlink{
   color: #4DA85B;
 }

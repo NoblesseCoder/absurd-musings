@@ -5,6 +5,7 @@ pageTitle: "Musings List"
 currentYear: "2021"
 ---
 
+<div class="scrollable">
 
 <a href = "https://towardsdatascience.com/solving-multi-armed-bandits-mab-problem-via-%CE%B5-greedy-agents-298de2e69971" class="tlink"> Solving Multi-Armed Bandits (MAB) problem via ε-greedy agents </a>
 
@@ -20,3 +21,5 @@ currentYear: "2021"
 	</li> 
 	{%- endfor -%} 
 </ul>
+
+</div>

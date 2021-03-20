@@ -4,6 +4,11 @@ html body {
   background-image:url("https://media.giphy.com/media/LrY1e5IDFLc1XtDKZf/giphy.gif");
 }
 
+.scrollable {
+    height: 20rem; /* or any value */
+    overflow: auto;
+}
+
 .tlink{
   color: #4DA85B;
 }
@@ -35,7 +40,7 @@ p{
     font-family: monospace;
     border-radius: 10px;
     border: 2px solid;
-    padding: 10px;
+    padding: 15px;
     background-color:rgba(255,255,255,1);
     display:inline-block;
     text-color: var(--text-color);

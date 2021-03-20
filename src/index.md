@@ -1,18 +1,22 @@
 ---
 layout: "index"
-title: "Absurd Musings"
-pageTitle: "Absurd Musings"
+title: "Musings"
+pageTitle: "Musings List"
 currentYear: "2021"
 ---
 
-Welcome to the garden of the absurd. Here I toil around with ideas from late-night reflections on philosophies to random Technical pet projects.  
 
-In the film Dead Poets Society, the lead reads a message from Thoreau during a poetry jam in a cave. It goes something like this - 
+<a href = "https://towardsdatascience.com/solving-multi-armed-bandits-mab-problem-via-%CE%B5-greedy-agents-298de2e69971" class="tlink"> Solving Multi-Armed Bandits (MAB) problem via ε-greedy agents </a>
 
-<em style = "color:green;">
-"I went to the woods because I wanted to live deliberately, I wanted to live deep and suck out all the marrow of life. To put to rout all that was not life and not when I had come to die to discover that I had not lived."
-</em>
-<br /> 
-<br /> 
+<a href = "https://medium.com/@Lightokun/an-anime-inspired-acl-injury-393083989ade" class="tlink"> An Anime inspired ACL injury 
+</a>
 
-To **suck out all the marrow of thought** is the sole purpose of this garden.
+<a href = "https://towardsdatascience.com/defence-against-the-data-arts-python-v-s-r-5f4529c1d90f" class="tlink"> Defence Against the Data Arts : Python v/s R </a>
+
+<ul class="list-unstyled"> 
+	{%- for musing in collections.musings -%}
+	<li class="list">
+		<h5><a class= "tlink" href="{{musing.url}}">{{musing.data.pageTitle}}</a> </h5>
+	</li> 
+	{%- endfor -%} 
+</ul>

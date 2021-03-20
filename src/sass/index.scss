@@ -1,7 +1,7 @@
 html body {
   font-family: monospace;
-  color: rgb(0,0,0,1);
-  background-image:url("https://media.giphy.com/media/LrY1e5IDFLc1XtDKZf/giphy.gif")
+  color: black;
+  background-image:url("https://media.giphy.com/media/LrY1e5IDFLc1XtDKZf/giphy.gif");
 }
 
 .tlink{
@@ -12,48 +12,46 @@ p{
   font-size: 20px;
 }
 
-em{
-  font-size: 20px;
-  font-family: monospace;
-}
-
 .container-fluid, .blog-post-title{
-  color: green;
+  color: #4DA85B;
   text-color: #4DA85B;
 
 }
 
 .bg-custom { 
-    background-color: rgba(0,0,0,0.6); 
+    background-color: rgba(0,0,0,0.8); 
 } 
 
 .container-md{
   padding:2rem;
-  backgorund-color:green;
 }
 
 .row{
   padding:1rem;
 }
 
-.col-md-4{
-  text-align:right;
-}
-
-.intro {
+.musingsList {
     font-size: 20px;
     font-family: monospace;
     border-radius: 10px;
     border: 2px solid;
-    padding: 20px;
+    padding: 10px;
     background-color:rgba(255,255,255,1);
     display:inline-block;
+    text-color: var(--text-color);
 }
 
 .navbar-toggler .navbar-toggler-icon {
   background-color: rgba(255,255,255,0.6);
 }
 
+.col-md-12{
+   background-color: rgba(255,255,255,1);
+}
+
+.list{
+  color:#4DA85B;
+}
 
 .footer {
     position: fixed;
@@ -63,7 +61,6 @@ em{
     line-height: 60px;
     background-color: black;
     padding: 1px;
-    color:#4DA85B;
     font-size:20px;
 }
 
@@ -72,4 +69,10 @@ em{
     text-color:white;
     text-align: center;
 }
+
+
+
+
+
+
 
